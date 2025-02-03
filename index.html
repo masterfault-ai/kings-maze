@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kings-Maze</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="startPage">
+      <h1>Welcome to Kings-Maze!</h1>
+      <p>Navigate through challenging obstacles to reach the exit point.</p>
+      <button onclick="startGame()">Start Game</button>
+      <p class="footer-text">Made by KingxMaster</p>
+    </div>
+
+    <div id="overlay" class="overlay">
+      <h1>Congratulations!</h1>
+      <p>You reached the end of the maze!</p>
+      <button onclick="nextLevel()">Next Level</button>
+    </div>
+
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
